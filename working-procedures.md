@@ -10,6 +10,9 @@ ChatGPT ha creado para nosotros los payloads que le enviamos en carpetas. El tra
 
 Esta es la estructura de carpetas:
 
+![estructura de carpetas](https://i.imgur.com/N2JEjKx.png)
+
+
 Hay tres carpetas superiores: `nivel-basico`, `nivel-intermedio` y `nivel-avanzado`. Cada uno corresponde a un curso en curso-ingles.com. En cada uno de estos niveles se encuentran las unidades (como `christmas` en `nivel-basico`). Y dentro de estas, se encuentran archivos `.json` con el contenido de cada lección, que corresponden a cada lección de la unidad correspondiente en curso-ingles.com. La url de cada lección es:
 
 ```
