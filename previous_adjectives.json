@@ -1,0 +1,219 @@
+
+{
+  "screens": [
+    {
+      "type": "section",
+      "children": [
+        {
+          "type": "group",
+          "children": [
+            {
+              "type": "title",
+              "text": "Adjetivos",
+              "header": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Un adjetivo es una palabra que acompaña y modifica al {SNIPPET}. Puede ampliar, complementar o cuantificar su tamaño. Son palabras que nombran o indican cualidades, rasgos y propiedades de los nombres o {SNIPPET} a los que acompañan.",
+              "options": [
+                ["verbo", "nombre"],
+                ["verbos", "sustantivos"]
+              ],
+              "rightOptions": [1, 1]
+            },
+            {
+              "type": "title",
+              "text": "Ejemplos"
+            },
+            {
+              "type": "example",
+              "children": [
+                {
+                  "mainText": "the tall {SNIPPET}",
+                  "subText": "(el hombre alto)",
+                  "options": [
+                    ["woman", "man"]
+                  ],
+                  "rightOptions": [1]
+                },
+                {
+                  "mainText": "a happy {SNIPPET}",
+                  "subText": "(un niño contento)",
+                  "options": [
+                    ["child", "adult"]
+                  ],
+                  "rightOptions": [0]
+                },
+                {
+                  "mainText": "a dark {SNIPPET}",
+                  "subText": "(una calle oscura)",
+                  "options": [
+                    ["street", "room"]
+                  ],
+                  "rightOptions": [0]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "children": [
+        {
+          "type": "group",
+          "children": [
+            {
+              "type": "title",
+              "text": "Tipos de adjetivos en inglés",
+              "header": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Tipos de adjetivos en inglés:"
+            },
+            {
+              "type": "example",
+              "children": [
+                {
+                  "mainText": "Descriptive/Qualitative: {SNIPPET}, {SNIPPET}, nice, hot...",
+                  "subText": "Calificativos: gordo, azul, simpático, caliente...",
+                  "options": [
+                    ["fat", "thin"],
+                    ["blue", "red"]
+                  ],
+                  "rightOptions": [0, 0]
+                },
+                {
+                  "mainText": "Demonstrative: {SNIPPET}, {SNIPPET}, these, those",
+                  "subText": "Demostrativos: esto, eso, estos, esos.",
+                  "options": [
+                    ["this", "that"],
+                    ["where", "how"]
+                  ],
+                  "rightOptions": [0, 1]
+                },
+                {
+                  "mainText": "Quantitative: {SNIPPET}, any, many, much...",
+                  "subText": "Cuantitativos: alguno(s), alguno(s), ninguno, mucho(s)...",
+                  "options": [
+                    ["some", "none"]
+                  ],
+                  "rightOptions": [0]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "children": [
+        {
+          "type": "group",
+          "children": [
+            {
+              "type": "title",
+              "text": "Reglas Gramaticales",
+              "header": true
+            },
+            {
+              "type": "paragraph",
+              "text": "El adjetivo se sitúa casi siempre antes del {SNIPPET}. Con algunos verbos, el adjetivo se coloca después del {SNIPPET}. Estos verbos son: to be (ser/estar), to become (ponerse), to feel (sentirse), to look (parecer), to seem (parecer), to smell (oler), to taste (gustar).",
+              "options": [
+                ["noun", "subject"],
+                ["noun", "subject"]
+              ],
+              "rightOptions": [0, 0]
+            },
+            {
+              "type": "example",
+              "children": [
+                {
+                  "mainText": "She {SNIPPET} tired.",
+                  "subText": "(Parece cansada.)",
+                  "options": [
+                    ["is", "looks"]
+                  ],
+                  "rightOptions": [1]
+                },
+                {
+                  "mainText": "I {SNIPPET} good.",
+                  "subText": "(Me siento bien.)",
+                  "options": [
+                    ["feel", "look"]
+                  ],
+                  "rightOptions": [0]
+                },
+                {
+                  "mainText": "It {SNIPPET} bad.",
+                  "subText": "(Huele mal.)",
+                  "options": [
+                    ["tastes", "smells"]
+                  ],
+                  "rightOptions": [1]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "children": [
+            {
+              "type": "paragraph",
+              "text": "Podemos usar dos o más adjetivos juntos. Como norma general, seguimos el siguiente orden:"
+            },
+            {
+              "type": "paragraph",
+              "text": "1. opinión/valor {SNIPPET}\n2. tamaño/longitud {SNIPPET}\n3. edad/temperatura {SNIPPET}\n4. forma y superficie {SNIPPET}\n5. color {SNIPPET}\n6. origen {SNIPPET}\n7. material {SNIPPET}\n8. uso {SNIPPET}\n9. nombre {SNIPPET}",
+              "options": [
+                ["delicious", "cortar"],
+                ["short", "long"],
+                ["cold", "dormir"],
+                ["round", "cenar"],
+                ["red", "verbos"],
+                ["Spanish", "acciones"],
+                ["cotton", "pasado"],
+                ["electric", "eventos"],
+                ["bath (towel)", "questions"]
+              ],
+              "rightOptions": [0, 1, 0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+              "type": "example",
+              "children": [
+                {
+                  "mainText": "a {SNIPPET} small book",
+                  "subText": "(un pequeño libro negro)",
+                  "options": [
+                    ["black", "pretty"]
+                  ],
+                  "rightOptions": [0]
+                },
+                {
+                  "mainText": "a pretty {SNIPPET} woman",
+                  "subText": "(una guapa mujer española)",
+                  "options": [
+                    ["English", "Spanish"]
+                  ],
+                  "rightOptions": [1]
+                },
+                {
+                  "mainText": "a {SNIPPET} glass table",
+                  "subText": "(una gran mesa de vidrio)",
+                  "options": [
+                    ["small", "large"]
+                  ],
+                  "rightOptions": [1]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
