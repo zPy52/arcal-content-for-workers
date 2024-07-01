@@ -1,5 +1,7 @@
 # Ciertos errores a evitar
+
 ## Caso 1
+
 En casos como el siguiente:
 ```json
 {
