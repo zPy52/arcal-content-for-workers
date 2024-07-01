@@ -1,5 +1,5 @@
-## Ciertos errores a evitar
-#### Caso 1
+# Ciertos errores a evitar
+## Caso 1
 En casos como el siguiente:
 ```json
 {
@@ -27,7 +27,7 @@ Evita (1) repetir lo mismo pero en inglés [`sujeto` y `subject pronouns`]; y (2
 ```
 Intenta también que las opciones estén relacionadas si no son idénticas.
 
-#### Caso 2
+## Caso 2
 Asimismo, intenta que los títulos sean minimalistas a la vez que descriptivos. Al tratarse de una academia de inglés, y estar el usuario aprendiendo en una app en un curso de inglés, no hace falta tener un `title` con el `text` "Pronombres personales en inglés". Sería mejor que fuera simplemente "Pronombres personales". Por ejemplo, en vez de:
 ```json
 {
@@ -46,10 +46,10 @@ Pon:
 ```
 Es bastante evidente que se refiere a los pronombres en inglés al ser una lección de un curso de gramática de inglés.
 
-#### Caso 3
+## Caso 3
 Procura añadir todo el contenido de la fuente de información. Si una lección aborda 5 conceptos y lo hace con un alto grado de detalle, trata tú también los 5 conceptos y hazlo con un alto grado de detalle.
 
-#### Caso 4
+## Caso 4
 Incluye todos los componentes en grupos, y los grupos en secciones. No incluyas grupos en grupos, ni secciones en secciones. Es decir, EVITA:
 ```json
 {
@@ -81,7 +81,7 @@ Y pon:
 }
 ```
 
-#### Caso 5
+## Caso 5
 En las opciones, pon entre 1 y 3, usualmente dos. NUNCA hagas algo como esto:
 ```json
 {
