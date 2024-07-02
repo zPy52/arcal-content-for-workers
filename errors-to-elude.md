@@ -9,9 +9,26 @@ De la misma manera, al entrecomillar o referirse a un texto inglés, se ha de po
 
 Por supuesto, ha de cuidarse que la gramática y ortografía de todos los mensajes sean correctos, y no haya indiscreciones como colocar un signo de puntuación al lado de una letra,como en este caso.O en este otro. 
 
-Por último, es menester ajustar un mensaje al formato de una aplicación móvil. En caso de tener un fragmento de texto gigantesco, tal vez sea buena idea resumirlo o partirlo en varios párrafos para que no quede como un bloque monolítico gigante en la pantalla. Puede utilizar el [visualizador de payloads JSON](https://arcal-gt-visualizer.tiiny.site) para ayudarle. 
+Asimismo, es menester ajustar un mensaje al formato de una aplicación móvil. En caso de tener un fragmento de texto gigantesco, tal vez sea buena idea resumirlo o partirlo en varios párrafos para que no quede como un bloque monolítico gigante en la pantalla. Puede utilizar el [visualizador de payloads JSON](https://arcal-gt-visualizer.tiiny.site) para ayudarle. 
 
-De la misma manera, intente en la medida de lo posible explicar el contenido que encuentre en la web con sus propias palaras, a fin de que no sea una copia exacta de la web. Cree sus propios ejemplos en la medida de lo posible, basándose en los que se encuentran en la web. Por ejemplo, en vez de copiar «*bath (towel)*» (en la [lección de adjetivos del nivel básico](https://www.curso-ingles.com/aprender/cursos/nivel-basico/adjectives/adjectives)), se puede poner «*kitchen (table)*, *garden (tool)*...».
+De la misma forma, intente en la medida de lo posible explicar el contenido que encuentre en la web con sus propias palaras, a fin de que no sea una copia exacta de la web. Cree sus propios ejemplos en la medida de lo posible, basándose en los que se encuentran en la web. Por ejemplo, en vez de copiar «*bath (towel)*» (en la [lección de adjetivos del nivel básico](https://www.curso-ingles.com/aprender/cursos/nivel-basico/adjectives/adjectives)), se puede poner «*kitchen (table)*, *garden (tool)*...».
+
+Una buena brújula o estrella polar para cómo expresar algo con sus palabras es preguntarse *¿cómo puedo hacer inevitable que el estudiante entienda a la perfección el concepto?* y *¿qué dudas podría tener o podría generarle este contenido, y cómo podría mejorarlas?*. Esto le llevará también a profundizar en el mensaje y enriquecerlo, mejorando con muchísimas creces la experiencia y aprendizaje del usuario. Por ejemplo, en:
+
+```html
+<b>Nota: En inglés no existe la forma “usted” o “ustedes” formal.</b> Por lo tanto los nativos de la lengua ni siquiera lo tienen conceptualizado como una forma aquí llamada “formal”. Se tiene que entender por tanto, que la forma masculina, femenina y neutra son lo mismo, lo único que las diferencia es el género.
+
+Además, ten en cuenta que <b>en inglés sólo existe una forma para “tú” y “vosotros”, “you”</b>, excepto en la forma reflexiva que distingue entre el singular (yourself) y plural (yourselves).
+```
+
+Podría transformarse en:
+```html
+<b>Nota: En inglés no existe la forma “usted” o “ustedes” formal.</b> Por lo tanto los nativos de la lengua ni siquiera lo tienen conceptualizado como algo “formal” o que pueda tenera una versión formal. Esto aplica tanto para el masculino, femenino, neutro y plural: no hay pronombres exclusivamente formales.
+
+Para referir formalidad, ha de usarse otras expresiones como «*sir*» (caballero, señor) o «*His Majesty*» (Su Majestad).
+
+Además, tenga en cuenta que <b>en inglés sólo existe una forma para «tú» y «vosotros»: «<i>you</i>»</b>, excepto en la forma reflexiva que distingue entre el singular (<i>yourself</i>) y plural (<i>yourselves</i>).
+```
 
 
 ## Caso 1
@@ -193,6 +210,10 @@ Puede hacer:
 },
 {
   "type": "paragraph",
-  "text": "Los nativos de la lengua ni siquiera lo tienen conceptualizado como una forma «formal». Se tiene que entender por tanto, que la forma masculina, femenina y neutra son lo mismo, lo único que las diferencia es el género. Además, tenga en cuenta que <b>en inglés sólo existe una forma para «tú» y «vosotros»: «<i>you</i>»</b>, excepto en la forma reflexiva que distingue entre el singular (<i>yourself</i>) y plural (<i>yourselves</i>)."
+  "text": "Los nativos de la lengua ni siquiera lo tienen conceptualizado como una forma «formal». Se tiene que entender por tanto, que la forma masculina, femenina y neutra son lo mismo, lo único que las diferencia es el género."
+},
+{
+  "type": "paragraph",
+  "text": "Además, tenga en cuenta que <b>en inglés sólo existe una forma para «tú» y «vosotros»: «<i>you</i>»</b>, excepto en la forma reflexiva que distingue entre el singular (<i>yourself</i>) y plural (<i>yourselves</i>)."
 }
 ```
