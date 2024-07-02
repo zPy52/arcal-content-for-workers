@@ -15,20 +15,17 @@ De la misma forma, intente en la medida de lo posible explicar el contenido que 
 
 Una buena brújula o estrella polar para cómo expresar algo con sus palabras es preguntarse *¿cómo puedo hacer inevitable que el estudiante entienda a la perfección el concepto?* y *¿qué dudas podría tener o podría generarle este contenido, y cómo podría mejorarlas?*. Esto le llevará también a profundizar en el mensaje y enriquecerlo, mejorando con muchísimas creces la experiencia y aprendizaje del usuario. Por ejemplo, en:
 
-```html
-<b>Nota: En inglés no existe la forma “usted” o “ustedes” formal.</b> Por lo tanto los nativos de la lengua ni siquiera lo tienen conceptualizado como una forma aquí llamada “formal”. Se tiene que entender por tanto, que la forma masculina, femenina y neutra son lo mismo, lo único que las diferencia es el género.
-
-Además, ten en cuenta que <b>en inglés sólo existe una forma para “tú” y “vosotros”, “you”</b>, excepto en la forma reflexiva que distingue entre el singular (yourself) y plural (yourselves).
-```
+> **Nota: En inglés no existe la forma “usted” o “ustedes” formal.** Por lo tanto los nativos de la lengua ni siquiera lo tienen conceptualizado como una forma aquí llamada “formal”. Se tiene que entender por tanto, que la forma masculina, femenina y neutra son lo mismo, lo único que las diferencia es el género.
+>
+> Además, ten en cuenta que **en inglés sólo existe una forma para “tú” y “vosotros”, “you”**, excepto en la forma reflexiva que distingue entre el singular (yourself) y plural (yourselves).
 
 Podría transformarse en:
-```html
-<b>Nota: En inglés no existe la forma “usted” o “ustedes” formal.</b> Por lo tanto los nativos de la lengua ni siquiera lo tienen conceptualizado como algo “formal” o que pueda tenera una versión formal. Esto aplica tanto para el masculino, femenino, neutro y plural: no hay pronombres exclusivamente formales.
 
-Para referir formalidad, ha de usarse otras expresiones como «*sir*» (caballero, señor) o «*His Majesty*» (Su Majestad).
-
-Además, tenga en cuenta que <b>en inglés sólo existe una forma para «tú» y «vosotros»: «<i>you</i>»</b>, excepto en la forma reflexiva que distingue entre el singular (<i>yourself</i>) y plural (<i>yourselves</i>).
-```
+> **Nota: En inglés no existe la forma “usted” o “ustedes” formal.** Por lo tanto los nativos de la lengua ni siquiera lo tienen conceptualizado como algo “formal” o que pueda tenera una versión formal. Esto aplica tanto para el masculino, femenino, neutro y plural: no hay pronombres exclusivamente formales.
+>
+> Para referir formalidad, ha de usarse otras expresiones como «*sir*» (caballero, señor) o «*His Majesty*» (Su Majestad).
+>
+> Además, tenga en cuenta que **en inglés sólo existe una forma para «tú» y «vosotros»: «<i>you</i>»**, excepto en la forma reflexiva que distingue entre el singular (<i>yourself</i>) y plural (<i>yourselves</i>).
 
 
 ## Caso 1
@@ -183,9 +180,9 @@ Solo pon 1 por caso cuando la respuesta es tan poco intuitiva o inimaginable par
 
 ## Caso 6 
 Siempre que se pueda, ha de usarse las comillas españolas «» en lugar de las inglesas "" o simples ''. Estas últimas solo se usan dentro de las españolas, para entrecomillar un fragmento ya entrecomillado. Por ejemplo:
-```
-Yo ya se lo había advertido: «Ten cuidado, que se rompe». Al poco rato, se me acerca con una rueda en la mano y carita compungida: «Se me ha "rompido" sin querer». Y le digo, conteniendo la risa: «¿Cómo que "se me ha 'rompido' sin querer"?».
-```
+
+> Yo ya se lo había advertido: «Ten cuidado, que se rompe». Al poco rato, se me acerca con una rueda en la mano y carita compungida: «Se me ha "rompido" sin querer». Y le digo, conteniendo la risa: «¿Cómo que "se me ha 'rompido' sin querer"?».
+
 
 ## Caso 7
 Las notificaciones han de ser muy pequeñas en contenido. Estas aparecen en la app como una notificación de WhatsApp lo hace en un iPhone: cayendo desde arriba y ocupando parte de la pantalla. Por su naturaleza intrusiva, estos componentes han de ser especialmente pequeños. Cuando se tenga una nota muy grande, los detalles han de explicarse en un párrafo. Las notificaciones solo están para apuntes muy rápidos, fugaces, pequeños.
