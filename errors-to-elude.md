@@ -189,7 +189,7 @@ Puede hacer:
 ...
 {
   "type": "title",
-  "text": "El «usted»"
+  "text": "Cómo decir «usted» en vez de «tú»"
 },
 {
   "type": "paragraph",
