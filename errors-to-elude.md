@@ -1,5 +1,12 @@
 # Ciertos errores a evitar
 
+## Caso 0
+El lenguaje ha de ser formal, tratando de usted al usuario cuando se refiera a él. Por ejemplo, en vez de decir «tienes que tener cuidado con la forma del plural», se ha de decir «tenga cuidado con la forma del plural». Asimismo, ha de usarse un tono y vocabulario propio del español de España, diciendo «aquí» en lugar de «acá», o «vídeo» en vez de «video». 
+
+Hay una excepción a esta regla y es cuando solo hablar con el español de España sonara redundante. Por ejemplo, si se ha dicho muchas veces la palabra «aquí» se puede decir «acá» para variar y enriquecer el mensaje. Esta excepción no aplica a los acentos (no vale expresar «¿qué hacés?» en vez de «¿qué haces?»).
+
+De la misma manera, al entrecomillar o referirse a un texto inglés, se ha de poner en *cursiva*, pudiendo añadirse **negrita** u otros efectos semejantes si se desea y es adecuado para el caso. Por ejemplo, al decir «la expresión *hold your ground* significa "mantenerse firme"» o en «la forma plural del pronombre es igual que para el singular (*you*)».
+
 ## Caso 1
 En casos como el siguiente:
 ```json
@@ -83,7 +90,7 @@ Y pon:
 ```
 
 ## Caso 5
-En las opciones, pon entre 1 y 3, usualmente dos. NUNCA hagas algo como esto:
+En las opciones, pon entre 1 y 3, usualmente dos. **NUNCA** hagas algo como esto:
 ```json
 {
   "type": "paragraph",
@@ -147,5 +154,38 @@ Solo pon 1 por caso cuando la respuesta es tan poco intuitiva o inimaginable par
     ["distancia"]
   ],
   "rightOptions": [1, 0]
+}
+```
+
+## Caso 6 
+Siempre que se pueda, ha de usarse las comillas españolas «» en lugar de las inglesas "" o simples ''. Estas últimas solo se usan dentro de las españolas, para entrecomillar un fragmento ya entrecomillado. Por ejemplo:
+```
+Yo ya se lo había advertido: «Ten cuidado, que se rompe». Al poco rato, se me acerca con una rueda en la mano y carita compungida: «Se me ha "rompido" sin querer». Y le digo, conteniendo la risa: «¿Cómo que "se me ha 'rompido' sin querer"?».
+```
+
+## Caso 7
+Las notificaciones han de ser muy pequeñas en contenido. Estas aparecen en la app como una notificación de WhatsApp lo hace en un iPhone: cayendo desde arriba y ocupando parte de la pantalla. Por su naturaleza intrusiva, estos componentes han de ser especialmente pequeños. Cuando se tenga una nota muy grande, los detalles han de explicarse en un párrafo. Las notificaciones solo están para apuntes muy rápidos, fugaces, pequeños.
+
+Por ejemplo, en vez de:
+```json
+{
+  "type": "notification",
+  "text": "<b>Nota: En inglés no existe la forma «usted» o «ustedes» formal.</b> Por lo tanto los nativos de la lengua ni siquiera lo tienen conceptualizado como una forma aquí llamada “formal”. Se tiene que entender por tanto, que la forma masculina, femenina y neutra son lo mismo, lo único que las diferencia es el género. Además, ten en cuenta que <B> en inglés sólo existe una forma para “tú” y “vosotros”, “you”</b>,excepto en la forma reflexiva que distingue entre el singular (<b>yourself</b>) y plural (<b>yourselves</b>)."
+}
+```
+Puede hacer:
+```json
+{
+  "type": "notification",
+  "text": "Nota: En inglés no existe la forma «usted» o «ustedes» formal."
+},
+...
+{
+  "type": "title",
+  "text": "Género neutro"
+},
+{
+  "type": "paragraph",
+  "text": "Los nativos de la lengua ni siquiera lo tienen conceptualizado como una forma «formal». Se tiene que entender por tanto, que la forma masculina, femenina y neutra son lo mismo, lo único que las diferencia es el género. Además, tenga en cuenta que <b>en inglés sólo existe una forma para «tú» y «vosotros»: «<i>you</i>»</b>, excepto en la forma reflexiva que distingue entre el singular (<i>yourself</i>) y plural (<i>yourselves</i>)."
 }
 ```
