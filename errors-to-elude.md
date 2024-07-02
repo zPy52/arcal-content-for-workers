@@ -1,16 +1,25 @@
 # Ciertos errores a evitar
 
 ## Caso 0 (reglas generales de estilización)
+
+#### Expresión y referencia al receptor, lector o usuario
 El lenguaje ha de ser formal, tratando de usted al usuario cuando se refiera a él. Por ejemplo, en vez de decir «tienes que tener cuidado con la forma del plural», se ha de decir «tenga cuidado con la forma del plural». Asimismo, ha de usarse un tono y vocabulario propio del español de España, diciendo «aquí» en lugar de «acá», o «vídeo» en vez de «video». 
 
 Hay una excepción a esta regla y es cuando solo hablar con el español de España sonara redundante. Por ejemplo, si se ha dicho muchas veces la palabra «aquí» se puede decir «acá» para variar y enriquecer el mensaje. Esta excepción no aplica a los acentos (no vale expresar «¿qué hacés?» en vez de «¿qué haces?»).
 
+#### Entrecomillado
 De la misma manera, al entrecomillar o referirse a un texto inglés, se ha de poner en *cursiva*, pudiendo añadirse **negrita** u otros efectos semejantes si se desea y es adecuado para el caso. Por ejemplo, al decir «la expresión *hold your ground* significa "mantenerse firme"» o en «la forma plural del pronombre es igual que para el singular (*you*)».
 
+Siempre que se pueda, ha de usarse las comillas españolas «» en lugar de las inglesas "" o simples ''. Estas últimas solo se usan dentro de las españolas, para entrecomillar un fragmento ya entrecomillado. Por ejemplo:
+
+> Yo ya se lo había advertido: «Ten cuidado, que se rompe». Al poco rato, se me acerca con una rueda en la mano y carita compungida: «Se me ha "rompido" sin querer». Y le digo, conteniendo la risa: «¿Cómo que "se me ha 'rompido' sin querer"?».
+
+#### Cuidado de los detalles
 Por supuesto, ha de cuidarse que la gramática y ortografía de todos los mensajes sean correctos, y no haya indiscreciones como colocar un signo de puntuación al lado de una letra,como en este caso.O en este otro. 
 
 Asimismo, es menester ajustar un mensaje al formato de una aplicación móvil. En caso de tener un fragmento de texto gigantesco, tal vez sea buena idea resumirlo o partirlo en varios párrafos para que no quede como un bloque monolítico gigante en la pantalla. Puede utilizar el [visualizador de payloads JSON](https://arcal-gt-visualizer.tiiny.site) para ayudarle. 
 
+#### Expresión en sus propias palabras
 De la misma forma, intente en la medida de lo posible explicar el contenido que encuentre en la web con sus propias palaras, a fin de que no sea una copia exacta de la web. Cree sus propios ejemplos en la medida de lo posible, basándose en los que se encuentran en la web. Por ejemplo, en vez de copiar «*bath (towel)*» (en la [lección de adjetivos del nivel básico](https://www.curso-ingles.com/aprender/cursos/nivel-basico/adjectives/adjectives)), se puede poner «*kitchen (table)*, *garden (tool)*...».
 
 Una buena brújula o estrella polar para cómo expresar algo con sus palabras es preguntarse *¿cómo puedo hacer inevitable que el estudiante entienda a la perfección el concepto?* y *¿qué dudas podría tener o podría generarle este contenido, y cómo podría mejorarlas?*. Esto le llevará también a profundizar en el mensaje y enriquecerlo, mejorando con muchísimas creces la experiencia y aprendizaje del usuario. Por ejemplo, en:
@@ -178,13 +187,7 @@ Solo pon 1 por caso cuando la respuesta es tan poco intuitiva o inimaginable par
 }
 ```
 
-## Caso 6 
-Siempre que se pueda, ha de usarse las comillas españolas «» en lugar de las inglesas "" o simples ''. Estas últimas solo se usan dentro de las españolas, para entrecomillar un fragmento ya entrecomillado. Por ejemplo:
-
-> Yo ya se lo había advertido: «Ten cuidado, que se rompe». Al poco rato, se me acerca con una rueda en la mano y carita compungida: «Se me ha "rompido" sin querer». Y le digo, conteniendo la risa: «¿Cómo que "se me ha 'rompido' sin querer"?».
-
-
-## Caso 7
+## Caso 6
 Las notificaciones han de ser muy pequeñas en contenido. Estas aparecen en la app como una notificación de WhatsApp lo hace en un iPhone: cayendo desde arriba y ocupando parte de la pantalla. Por su naturaleza intrusiva, estos componentes han de ser especialmente pequeños. Cuando se tenga una nota muy grande, los detalles han de explicarse en un párrafo. Las notificaciones solo están para apuntes muy rápidos, fugaces, pequeños.
 
 Por ejemplo, en vez de:
