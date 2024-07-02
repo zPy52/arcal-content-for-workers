@@ -9,6 +9,11 @@ De la misma manera, al entrecomillar o referirse a un texto inglés, se ha de po
 
 Por supuesto, ha de cuidarse que la gramática y ortografía de todos los mensajes sean correctos, y no haya indiscreciones como colocar un signo de puntuación al lado de una letra,como en este caso.O en este otro. 
 
+Por último, es menester ajustar un mensaje al formato de una aplicación móvil. En caso de tener un fragmento de texto gigantesco, tal vez sea buena idea resumirlo o partirlo en varios párrafos para que no quede como un bloque monolítico gigante en la pantalla. Puede utilizar el [visualizador de payloads JSON](https://arcal-gt-visualizer.tiiny.site) para ayudarle. 
+
+De la misma manera, intente en la medida de lo posible explicar el contenido que encuentre en la web con sus propias palaras, a fin de que no sea una copia exacta de la web. Cree sus propios ejemplos en la medida de lo posible, basándose en los que se encuentran en la web. Por ejemplo, en vez de copiar «*bath (towel)*» (en la [lección de adjetivos del nivel básico](https://www.curso-ingles.com/aprender/cursos/nivel-basico/adjectives/adjectives)), se puede poner «*kitchen (table)*, *garden (tool)*...».
+
+
 ## Caso 1
 En casos como el siguiente:
 ```json
@@ -184,7 +189,7 @@ Puede hacer:
 ...
 {
   "type": "title",
-  "text": "Género neutro"
+  "text": "El «usted»"
 },
 {
   "type": "paragraph",
