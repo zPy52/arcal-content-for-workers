@@ -1,11 +1,13 @@
 # Ciertos errores a evitar
 
-## Caso 0
+## Caso 0 (reglas generales de estilización)
 El lenguaje ha de ser formal, tratando de usted al usuario cuando se refiera a él. Por ejemplo, en vez de decir «tienes que tener cuidado con la forma del plural», se ha de decir «tenga cuidado con la forma del plural». Asimismo, ha de usarse un tono y vocabulario propio del español de España, diciendo «aquí» en lugar de «acá», o «vídeo» en vez de «video». 
 
 Hay una excepción a esta regla y es cuando solo hablar con el español de España sonara redundante. Por ejemplo, si se ha dicho muchas veces la palabra «aquí» se puede decir «acá» para variar y enriquecer el mensaje. Esta excepción no aplica a los acentos (no vale expresar «¿qué hacés?» en vez de «¿qué haces?»).
 
 De la misma manera, al entrecomillar o referirse a un texto inglés, se ha de poner en *cursiva*, pudiendo añadirse **negrita** u otros efectos semejantes si se desea y es adecuado para el caso. Por ejemplo, al decir «la expresión *hold your ground* significa "mantenerse firme"» o en «la forma plural del pronombre es igual que para el singular (*you*)».
+
+Por supuesto, ha de cuidarse que la gramática y ortografía de todos los mensajes sean correctos, y no haya indiscreciones como colocar un signo de puntuación al lado de una letra,como en este caso.O en este otro. 
 
 ## Caso 1
 En casos como el siguiente:
