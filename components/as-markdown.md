@@ -59,153 +59,122 @@ Igual que `# Section`.
 
 Este grupo contiene un title y un paragraph. El segundo, solo un párrafo.
 
----
 
-## Title
+## 2. Title
 
 ### Descripción:
 El componente title se utiliza para mostrar headers o subheaders que separan el contenido dentro de una sección o grupo.
 
-### Campos:
-- `type`: Este campo debe ser siempre "title".
-- `text`: El texto a mostrar, en el que se pueden añadir etiquetas html para negritas (`<b>`), cursivas (`<i>`) o subrayado (`<u>`).
-- `header`: (Opcional). Puede ser `false`, `true` o no incluirse. Si es `true`, se muestra como un título grande (piénsese en `<h1>`), mientras que con `false` o no incluyendo el campo `header` en el payload, sería un subtítulo (piénsese en `<h2>` y/o `<h3>`). Por cada screen SOLO PUEDE HABER 1 TÍTULO HEADER (`header` como `true`), aunque por cada grupo pueden haber ninguno, uno o varios títulos subheader (`header` es `false`).
+### Uso:
+Pon `### Title` para un subtítulo o un `### Title (header)` para *el primer title de la sección*.
 
 ### Ejemplo:
 
 ```markdown
+## Title (header)
+Ejemplo de título *(más grande que el siguiente por ser un header)*
+
+
 ## Title
-- type: title
-- text: El futuro con <b>will</b>
-- header: true
-...
-- type: title
-- text: Cuándo usar <i>a</i> o <i>an</i>
+Ejemplo de título (subheader)
 ```
 
-### Explicación:
 
-Este componente title se habrá de ubicar a la cabeza del primer grupo de la screen correspondiente. En el segundo caso, sobre "a" y "an", este podría ubicarse en el lugar más adecuado dentro de un grupo que tratara esa temática.
-
----
-
-## Paragraph
+## 3. Paragraph
 
 ### Descripción:
 El componente paragraph se utiliza para mostrar párrafos de texto que pueden contener snippets `{SNIPPET}` a completar con opciones. En caso de querer confeccionar una tabla, se habrá de usar un párrafo distinto por cada fila de la misma y adaptar el contenido a una vista de párrafo en lugar de tabla (excluyendo los headers, eliminando algún que otro campo si es necesario, etc.).
 
-### Campos:
-- `type`: Este campo debe ser siempre "paragraph".
-- `text`: El texto a mostrar, que puede incluir snippets `{SNIPPET}` que deben ser completados.
-- `options`: Una lista de listas de opciones para cada snippet en el texto.
-- `rightOptions`: Una lista de índices que indican la opción correcta para cada snippet en la lista de options.
+### Uso:
+Añade un párrafo e inmediatamente después las opciones y los índices para las opciones correctas. No debe añadir `options` y `rightOptions` añadirlo si no se incluye ningún `{SNIPPET}`. Cada párrafo debe estar anidado en un `### Paragraph` aparte. Véase el ejemplo 2 para mayor ilustración: en vez de poner los dos párrafos seguidos, se parten en dos, etiquetando cada uno con `### Paragraph`.
 
 ### Ejemplo 1:
 
 ```markdown
-## Paragraph
-- type: paragraph
-- text: El futuro con <b>will</b> se utiliza cuando {SNIPPET} que va a pasar algo:
-- options:
-  - ["no se está seguro de", "se sabe o se cree"]
-- rightOptions: [1]
+### Paragraph
+En inglés, se hace una distinción entre los pronombres que actúan como {SNIPPET} y los que funcionan como {SNIPPET}.
+
+- Options: [["sujeto", "abstracción"], ["verbo", "objeto"]]
+- Right Options: [0, 1]
 ```
-
-### Explicación:
-
-Este componente text incluye un snippet `{SNIPPET}` que el usuario debe completar seleccionando entre las opciones "no se está seguro de" y "se sabe o se cree". La opción correcta es la segunda, indicada por rightOptions: [1].
 
 ### Ejemplo 2:
 
 ```markdown
-## Paragraph
-- text: En inglés, se hace una distinción entre los pronombres que actúan como {SNIPPET} y los que funcionan como {SNIPPET}.
-- options:
-  - ["sujeto", "abstracción"]
-  - ["verbo", "objecto"]
-- rightOptions: [0, 1]
+### Paragraph
+En inglés, se hace una distinción entre los pronombres que actúan como sujeto y los que funcionan como objeto.
+
+### Paragraph
+En inglés, se hace una distinción entre los pronombres que actúan como {SNIPPET} y los que funcionan como {SNIPPET}.
+
+- Options: [["sujeto", "abstracción"], ["verbo", "objeto"]]
+- Right Options: [0, 1]
 ```
 
-### Explicación:
-
-Este componente text incluye dos snippets `{SNIPPET}` que el usuario debe completar seleccionando entre las opciones "sujeto" y "objeto". Para ello, se proporcionan dos listas (`["sujeto", "abstracción"]` y `["verbo", "objecto"]`) junto con los índices correctos en `rightOptions` (`0` para el primer caso y `1` para el segundo).
-
----
-
-## Example
+## 4. Example
 
 ### Descripción:
 El componente example se utiliza para mostrar ejemplos de oraciones en el idioma de aprendizaje con su correspondiente traducción. Estos ejemplos pueden contener snippets `{SNIPPET}` que deben ser completados con opciones.
 
-### Campos:
-- `type`: Este campo debe ser siempre "example".
-- `children`: Listado de ejemplos. Estos aparecerán uno detrás de otro, dentro de un componente Container.
-- `mainText`: El texto en el idioma que se está aprendiendo (inglés en este caso), que puede incluir snippets `{SNIPPET}`.
-- `subText`: La traducción del texto en el idioma nativo del usuario (español en este caso).
-- `options`: (Opcional [1]) Una lista de listas de opciones para cada snippet en el texto.
-- `rightOptions`: (Opcional [1]) Una lista de índices que indican la opción correcta para cada snippet en la lista de options. Si se incluye el campo `options`, se debe incluir este sí o sí.
-- `validOptions`: (Opcional [2]) Una lista de listas que contiene los posibles textos que el usuario puede ingresar para completar el snippet.
+### Uso:
+Añada `### Example` e inmediatamente debajo cree estas estructuras:
 
-El grupo de opcionales marcado con [1] no es compatible con los opcionales del [2]. Es decir, que si hay `options` y `rightOptions`, no puede haber `validOptions` y viceversa.
+#### 1. Si va a hacerlo con opciones (el usuario ha de seleccionar una de las opciones que usted pone)
+
+```markdown
+### Example
+1. Main Text: `texto en inglés`
+   - Sub Text: `texto en español`
+   - Options: `arrays de arrays de cadenas de texto json`
+   - Right Options: `arrays de números enteros json`
+```
+
+
+#### 2. Si va a hacerlo con valid inputs (se le pide al usuario escribir la respuesta, y usted pone una serie de inputs que se darán como válidos)
+```markdown
+### Example
+1. Main Text: `texto en inglés`
+   - Sub Text: `texto en español`
+   - Valid Inputs: `arrays arrats de cadenas de texto json`
+```
+
 
 ### Ejemplo 1 (con opciones):
 
 ```markdown
-## Example
-1. Main Text: There {SNIPPET} more women in high paying jobs.
-   - Sub Text: Habrá más mujeres en puestos de alta remuneración.
-   - Options: [["will be", "are going to be"]]
-   - Right Options: [0]
+### Example
+1. Main Text: {SNIPPET} am ill. You {SNIPPET} not.
+   - Sub Text: Yo estoy enfermo.
+   - Options: [["I", "you"], ["are", "is"]]
+   - Right Options: [0, 0]
 
-2. Main Text: It {SNIPPET} be autumn soon.
-   - Sub Text: Pronto será otoño.
-   - validOptions: ["will", "'ll"]
-
-3. Main Text: I'm {SNIPPET} the cinema tomorrow.
-   - Sub Text: Mañana iré al cine.
-   - validOptions: ["going to"]
+...
 ```
 
-### Explicación:
-
-Este ejemplo muestra una oración en inglés con un snippet `{SNIPPET}`. Las opciones para completar el snippet son "will be" y "are going to be", siendo la opción correcta "will be" indicada por rightOptions: [0].
 
 ### Ejemplo 2 (con validInputs):
 
 ```markdown
-## Example
-- Main Text: I {SNIPPET} a drink after work.
-- validInputs:
-  - ["will have", "will go for"]
-- Sub Text: Después del trabajo voy a ir a tomar algo.
+### Example
+1. Main Text: {SNIPPET} is handsome.
+   - Sub Text: Él es guapo.
+   - Valid Inputs: [["he", "that guy"]]
+
+...
 ```
 
-### Explicación:
 
-En este caso, el usuario debe introducir texto para completar el snippet `{SNIPPET}`. Las respuestas válidas son "will have" y "will go for", indicadas por validInputs: [["will have", "will go for"]].
-
----
-
-## Notification
+## 5. Notification
 
 ### Descripción:
 El componente notification se utiliza para mostrar mensajes informativos al usuario.
 
-### Campos:
-- `type`: Este campo debe ser siempre "notification".
-- `text`: El texto del mensaje informativo a mostrar.
+### Uso:
+Agregue `### Notification` e incluya el texto acto seguido.
 
 ### Ejemplo:
 
 ```markdown
-## Notification
-- type: notification
-- text: La palabra <b>will</b> también puede abreviarse como 'll.
+### Notification
+La palabra *will* también puede abreviarse como *'ll*.
 ```
-
-### Explicación:
-
-Este componente muestra un mensaje informativo sobre la abreviación de "will" a "'ll". No contiene snippets ni opciones, solo texto.
-#####
-
-Feel free to adjust any further details as necessary.
