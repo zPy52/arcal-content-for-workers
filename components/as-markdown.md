@@ -1,3 +1,6 @@
+Sure, here's your original document altered to an equivalent markdown format:
+
+#####
 # Documentación de Componentes
 A continuación, se detalla el listado de componentes que se pueden utilizar para representar una lección.
 
@@ -31,15 +34,18 @@ Este componente contiene dos secciones. El primero incluye un solo grupo, mientr
 
 ---
 
-## 1. Group
+# Section
 
-**Descripción:** El componente group se utiliza para agrupar varios componentes y presentarlos juntos en la pantalla. Una vez completados los ejercicios dentro del grupo, se pueden mostrar los siguientes grupos o componentes.
+## Group
+
+### Group
+El componente group se utiliza para agrupar varios componentes y presentarlos juntos en la pantalla. Una vez completados los ejercicios dentro del grupo, se pueden mostrar los siguientes grupos o componentes.
 
 **Campos:**
-- `type`: Este campo debe ser siempre "group".
-- `children`: Una lista de componentes que pertenecen al grupo.
+- `Type`: Este campo debe ser siempre "group".
+- `Children`: Una lista de componentes que pertenecen al grupo.
 
-**Ejemplo:**
+#### Ejemplo:
 
 ```markdown
 ## Group
@@ -55,16 +61,17 @@ Este grupo contiene dos componentes de texto. El primero muestra el título de l
 
 ---
 
-## 2. Title
+## Title
 
-**Descripción:** El componente title se utiliza para mostrar headers o subheaders que separan el contenido dentro de una sección o grupo.
+### Descripción:
+El componente title se utiliza para mostrar headers o subheaders que separan el contenido dentro de una sección o grupo.
 
-**Campos:**
+### Campos:
 - `type`: Este campo debe ser siempre "title".
-- `text`: El texto a mostrar, en el que se puedan añadir etiquetas html para negritas (`<b>`), cursivas (`<i>`) o subrayado (`<u>`).
+- `text`: El texto a mostrar, en el que se pueden añadir etiquetas html para negritas (`<b>`), cursivas (`<i>`) o subrayado (`<u>`).
 - `header`: (Opcional). Puede ser `false`, `true` o no incluirse. Si es `true`, se muestra como un título grande (piénsese en `<h1>`), mientras que con `false` o no incluyendo el campo `header` en el payload, sería un subtítulo (piénsese en `<h2>` y/o `<h3>`). Por cada screen SOLO PUEDE HABER 1 TÍTULO HEADER (`header` como `true`), aunque por cada grupo pueden haber ninguno, uno o varios títulos subheader (`header` es `false`).
 
-**Ejemplo:**
+### Ejemplo:
 
 ```markdown
 ## Title
@@ -82,17 +89,18 @@ Este componente title se habrá de ubicar a la cabeza del primer grupo de la scr
 
 ---
 
-## 3. Paragraph
+## Paragraph
 
-**Descripción:** El componente paragraph se utiliza para mostrar párrafos de texto que pueden contener snippets `{SNIPPET}` a completar con opciones. En caso de querer confeccionar una tabla, se habrá de usar un párrafo distinto por cada fila de la misma y adaptar el contenido a una vista de párrafo en lugar de tabla (excluyendo los headers, eliminando algún que otro campo si es necesario, etc.).
+### Descripción:
+El componente paragraph se utiliza para mostrar párrafos de texto que pueden contener snippets `{SNIPPET}` a completar con opciones. En caso de querer confeccionar una tabla, se habrá de usar un párrafo distinto por cada fila de la misma y adaptar el contenido a una vista de párrafo en lugar de tabla (excluyendo los headers, eliminando algún que otro campo si es necesario, etc.).
 
-**Campos:**
+### Campos:
 - `type`: Este campo debe ser siempre "paragraph".
 - `text`: El texto a mostrar, que puede incluir snippets `{SNIPPET}` que deben ser completados.
 - `options`: Una lista de listas de opciones para cada snippet en el texto.
 - `rightOptions`: Una lista de índices que indican la opción correcta para cada snippet en la lista de options.
 
-**Ejemplo:**
+### Ejemplo 1:
 
 ```markdown
 ## Paragraph
@@ -107,7 +115,7 @@ Este componente title se habrá de ubicar a la cabeza del primer grupo de la scr
 
 Este componente text incluye un snippet `{SNIPPET}` que el usuario debe completar seleccionando entre las opciones "no se está seguro de" y "se sabe o se cree". La opción correcta es la segunda, indicada por rightOptions: [1].
 
-**Ejemplo 2:**
+### Ejemplo 2:
 
 ```markdown
 ## Paragraph
@@ -124,11 +132,12 @@ Este componente text incluye dos snippets `{SNIPPET}` que el usuario debe comple
 
 ---
 
-## 4. Example
+## Example
 
-**Descripción:** El componente example se utiliza para mostrar ejemplos de oraciones en el idioma de aprendizaje con su correspondiente traducción. Estos ejemplos pueden contener snippets `{SNIPPET}` que deben ser completados con opciones.
+### Descripción:
+El componente example se utiliza para mostrar ejemplos de oraciones en el idioma de aprendizaje con su correspondiente traducción. Estos ejemplos pueden contener snippets `{SNIPPET}` que deben ser completados con opciones.
 
-**Campos:**
+### Campos:
 - `type`: Este campo debe ser siempre "example".
 - `children`: Listado de ejemplos. Estos aparecerán uno detrás de otro, dentro de un componente Container.
 - `mainText`: El texto en el idioma que se está aprendiendo (inglés en este caso), que puede incluir snippets `{SNIPPET}`.
@@ -139,7 +148,7 @@ Este componente text incluye dos snippets `{SNIPPET}` que el usuario debe comple
 
 El grupo de opcionales marcado con [1] no es compatible con los opcionales del [2]. Es decir, que si hay `options` y `rightOptions`, no puede haber `validOptions` y viceversa.
 
-**Ejemplo 1 (con opciones):**
+### Ejemplo 1 (con opciones):
 
 ```markdown
 ## Example
@@ -161,7 +170,7 @@ El grupo de opcionales marcado con [1] no es compatible con los opcionales del [
 
 Este ejemplo muestra una oración en inglés con un snippet `{SNIPPET}`. Las opciones para completar el snippet son "will be" y "are going to be", siendo la opción correcta "will be" indicada por rightOptions: [0].
 
-**Ejemplo 2 (con validInputs):**
+### Ejemplo 2 (con validInputs):
 
 ```markdown
 ## Example
@@ -177,15 +186,16 @@ En este caso, el usuario debe introducir texto para completar el snippet `{SNIPP
 
 ---
 
-## 5. Notification
+## Notification
 
-**Descripción:** El componente notification se utiliza para mostrar mensajes informativos al usuario.
+### Descripción:
+El componente notification se utiliza para mostrar mensajes informativos al usuario.
 
-**Campos:**
+### Campos:
 - `type`: Este campo debe ser siempre "notification".
 - `text`: El texto del mensaje informativo a mostrar.
 
-**Ejemplo:**
+### Ejemplo:
 
 ```markdown
 ## Notification
@@ -196,3 +206,6 @@ En este caso, el usuario debe introducir texto para completar el snippet `{SNIPP
 ### Explicación:
 
 Este componente muestra un mensaje informativo sobre la abreviación de "will" a "'ll". No contiene snippets ni opciones, solo texto.
+#####
+
+Feel free to adjust any further details as necessary.
