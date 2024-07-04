@@ -5,23 +5,29 @@ A continuación, se detalla el listado de componentes que se pueden utilizar par
 
 **Descripción:** Este componente se utiliza para representar una pantalla completa (sección) en la aplicación. Contiene uno o más grupos de componentes que se mostrarán juntos. Este componente se usa para estructurar el contenido de una lección de forma lógica y manejable, permitiendo dividir el contenido en múltiples pantallas si es necesario.
 
-**Campos:**
-- `type`: Este campo debe ser siempre "section".
-- `children`: Una lista de grupos que pertenecen a la pantalla/sección.
+**Uso:**
+Cree una línea que comience con `# Section` y divídalo en grupos y componentes. Se dará por terminada la sección cuando llegue al final del documento o cuando se encuentre con otra línea con `# Section`.
 
 **Ejemplo:**
 
 ```markdown
 # Section
-- type: section
-- children:
-  - group
-  - group
+
+## Group
+...
+
+# Section
+
+## Group
+...
+
+## Group
+...
 ```
 
 ### Explicación:
 
-Este componente contiene dos grupos. El primer grupo incluye dos componentes text, mientras que el segundo grupo incluye dos componentes example. Esta estructura permite que toda la información se muestre en una sola pantalla.
+Este componente contiene dos secciones. El primero incluye un solo grupo, mientras que el segundo grupo incluye dos grupos.
 
 ---
 
