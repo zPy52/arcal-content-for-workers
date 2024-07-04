@@ -34,30 +34,32 @@ Este componente contiene dos secciones. El primero incluye un solo grupo, mientr
 
 ---
 
-# Section
 
-## Group
-
-### Group
+## 1. Group
 El componente group se utiliza para agrupar varios componentes y presentarlos juntos en la pantalla. Una vez completados los ejercicios dentro del grupo, se pueden mostrar los siguientes grupos o componentes.
 
-**Campos:**
-- `Type`: Este campo debe ser siempre "group".
-- `Children`: Una lista de componentes que pertenecen al grupo.
+**Uso:**
+Igual que `# Section`.
 
 #### Ejemplo:
 
 ```markdown
 ## Group
-- type: group
-- children:
-  - title
-  - paragraph
+
+### Title
+...
+
+### Paragraph
+...
+
+## Group
+
+### Paragraph
 ```
 
 ### Explicación:
 
-Este grupo contiene dos componentes de texto. El primero muestra el título de la sección, mientras que el párrafo incluye un `{SNIPPET}` que el usuario debe completar seleccionando una opción.
+Este grupo contiene un title y un paragraph. El segundo, solo un párrafo.
 
 ---
 
