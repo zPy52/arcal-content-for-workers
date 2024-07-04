@@ -32,8 +32,6 @@ Cree una línea que comience con `# Section` y divídalo en grupos y componentes
 
 Este componente contiene dos secciones. El primero incluye un solo grupo, mientras que el segundo grupo incluye dos grupos.
 
----
-
 
 ## 1. Group
 El componente group se utiliza para agrupar varios componentes y presentarlos juntos en la pantalla. Una vez completados los ejercicios dentro del grupo, se pueden mostrar los siguientes grupos o componentes.
