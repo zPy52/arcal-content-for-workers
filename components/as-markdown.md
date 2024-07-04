@@ -6,12 +6,10 @@ Se adjunta un ejemplo al final de este archivo de una lección gramatical en JSO
 # Nota 2:
 En el texto de los componentes `Title`, `Paragraph`, `Notification` y `Example` (`Main Text` y `Sub Text`) podrá usarse la siguiente notación markdown para aplicar estilos de cursiva, negrita, etc:
 
-Bold: The regular expression \*\*(.+?)\*\* matches any text enclosed within double asterisks (**). The (.+?) part captures the text inside the asterisks non-greedily.
-Italic: The regular expression \*(.+?)\* matches any text enclosed within single asterisks (*). The (.+?) part captures the text inside the asterisks non-greedily.
-Underline: The regular expression __(.+?)__ matches any text enclosed within double underscores (__). The (.+?) part captures the text inside the underscores non-greedily.
-Strikethrough: The regular expression ~~(.+?)~~ matches any text enclosed within double tildes (~~). The (.+?) part captures the text inside the tildes non-greedily.
-Links: The regular expression \[(.+?)\]\((.+?)\) matches markdown link syntax [text](url). The (.+?) parts capture the link text and the URL non-greedily.
-
+- **Negrita:** Emplace el texto entre dobles asteriscos. Por ejemplo, `Esto es un **ejemplo**.` en markdown se convierte en: Esto es un **ejemplo**.
+- *Cursiva:* Emplace el texto entre asteriscos. Por ejemplo, `Esto es un *ejemplo*.` en markdown se convierte en: Esto es un *ejemplo*.
+- __Subrayado:__ Emplace el texto entre dobles barras bajas. Por ejemplo, `Esto es un __ejemplo__.` en markdown se convierte en: Esto es un __ejemplo__.
+- ~~Rayado:~~ Emplace el texto entre asteriscos. Por ejemplo, `Esto es un ~~ejemplo~~.` en markdown se convierte en: Esto es un ~~ejemplo~~.
 
 # Documentación de Componentes (Markdown)
 A continuación, se detalla el listado de componentes que se pueden utilizar para representar una lección.
